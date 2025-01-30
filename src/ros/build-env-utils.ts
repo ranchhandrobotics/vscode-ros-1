@@ -38,9 +38,6 @@ export async function createConfigFiles() {
 }
 
 export async function updateCppProperties(context: vscode.ExtensionContext): Promise<void> {
-    const reporter = telemetry.getReporter();
-    reporter.sendTelemetryCommand(extension.Commands.UpdateCppProperties);
-
     updateCppPropertiesInternal();
 }
 

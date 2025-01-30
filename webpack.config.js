@@ -66,37 +66,4 @@ const ros1_webview_config = {
   },
 };
 
-    /** @type WebpackConfig */
-const ros2_webview_config = {
-  ...baseConfig,
-  target: ["web", "es2022"],
-  entry: "./src/ros/ros2/webview/ros2_webview_main.ts",
-  experiments: { outputModule: true, topLevelAwait: true },
-  resolve: {
-    extensions: [".ts", ".tsx", ".js"],
-  },
-  output: {
-    path: path.resolve(__dirname, "dist"),
-    filename: "ros2_webview_main.js",
-    libraryTarget: "module",
-    chunkFormat: "module",
-  },
-};
-
-// Config for webview source code (to be run in a web-based context)
-/** @type WebpackConfig */
-const webviewURDFConfig = {
-  ...baseConfig,
-  target: ["web", "es2022"],
-  entry: "./src/urdfPreview/URDFPreviewPanel.ts",
-  experiments: { outputModule: true, topLevelAwait: true },
-  output: {
-    path: path.resolve(__dirname, "dist"),
-    filename: "webview.js",
-    libraryTarget: "module",
-    chunkFormat: "module",
-  },
-};
-
-
-module.exports = [extensionConfig, ros1_webview_config, ros2_webview_config, webviewURDFConfig];
+module.exports = [extensionConfig, ros1_webview_config];

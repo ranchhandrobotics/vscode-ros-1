@@ -7,7 +7,6 @@ import * as vscode from "vscode";
 
 import * as extension from "../extension";
 import * as pfs from "../promise-fs";
-import * as telemetry from "../telemetry-helper";
 
 /**
  * Executes a setup file and returns the resulting env.
@@ -82,9 +81,6 @@ export function getDistros(): Promise<string[]> {
  * Creates and shows a ROS-sourced terminal.
  */
 export function createTerminal(context: vscode.ExtensionContext): vscode.Terminal {
-    const reporter = telemetry.getReporter();
-    reporter.sendTelemetryCommand(extension.Commands.CreateTerminal);
-
     const terminal = vscode.window.createTerminal({ name: 'ROS', env: extension.env })
     terminal.show();
 

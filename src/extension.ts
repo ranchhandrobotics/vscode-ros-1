@@ -177,7 +177,7 @@ export async function activate(context: vscode.ExtensionContext) {
 
 export async function deactivate() {
     subscriptions.forEach(disposable => disposable.dispose());
- 
+}
 
 async function ensureErrorMessageOnException(callback: (...args: any[]) => any) {
     try {

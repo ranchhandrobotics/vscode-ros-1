@@ -7,12 +7,8 @@ import * as vscode from "vscode";
 import * as xmlrpc from "xmlrpc";
 
 import * as extension from "../../extension";
-import * as telemetry from "../../telemetry-helper";
 
 export function startCore(context: vscode.ExtensionContext) {
-    const reporter = telemetry.getReporter();
-    reporter.sendTelemetryCommand(extension.Commands.StartRosCore);
-
     let launchCoreCommand: string = "roscore";
     let processOptions: child_process.SpawnOptions = {
         cwd: vscode.workspace.rootPath,
@@ -26,9 +22,6 @@ export function startCore(context: vscode.ExtensionContext) {
 }
 
 export function stopCore(context: vscode.ExtensionContext, api: XmlRpcApi) {
-    const reporter = telemetry.getReporter();
-    reporter.sendTelemetryCommand(extension.Commands.TerminateRosCore);
-
     if (process.platform === "win32") {
         api.getPid().then(pid => child_process.exec(`taskkill /pid ${pid} /f`));
     }
@@ -38,9 +31,6 @@ export function stopCore(context: vscode.ExtensionContext, api: XmlRpcApi) {
 }
 
 export function launchMonitor(context: vscode.ExtensionContext) {
-    const reporter = telemetry.getReporter();
-    reporter.sendTelemetryCommand(extension.Commands.ShowCoreStatus);
-
     const panel = vscode.window.createWebviewPanel(
         "rosCoreStatus",
         "ROS Core Status",

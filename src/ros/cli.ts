@@ -65,9 +65,6 @@ async function prepareroslaunch(): Promise<vscode.Terminal> {
 }
 
 export async function rostest(context: vscode.ExtensionContext) {
-    const reporter = telemetry.getReporter();
-    reporter.sendTelemetryCommand(extension.Commands.Rostest);
-
     let terminal = await preparerostest();
     if (!terminal) {
         return;
