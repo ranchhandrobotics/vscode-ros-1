@@ -203,7 +203,7 @@ export class ROS1 implements ros.ROSApi {
     public setTerminalEnv(terminal:vscode.Terminal,env: any) {
         if (process.platform === "linux"){
             for(var item in env){
-                terminal.sendText(`export ${item}=${env[item]} >/dev/null`);
+                terminal.sendText(`export ${item}=\"${env[item]}\" >/dev/null`);
             }
         }
     }

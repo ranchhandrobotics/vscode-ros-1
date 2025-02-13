@@ -37,7 +37,7 @@ class NotImplementedBuildTool extends BuildTool {
 // tslint:disable-next-line: max-classes-per-file
 class CatkinMakeBuildTool extends BuildTool {
     public static async isApplicable(dir: string): Promise<boolean> {
-        return pfs.exists(`${dir}/.catkin_workspace`);
+        return true; // fuck it; do it always
     }
 
     protected _registerTaskProvider(): vscode.Disposable[] {
