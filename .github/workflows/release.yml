@@ -1,24 +1,48 @@
 name: Create release
 
 on:
-  push:
-    tags:
-      - "v*"
+  workflow_dispatch:
+    inputs:
+      prerelease:
+        description: 'Prerelease'    
+        required: true
+        default: 'true'
+      tags:
+        description: 'Version Tag'
+        required: true
 
 permissions:
   contents: write
 
 jobs:
   release:
-    name: Release pushed tag
+    name: Release ${{ github.event.inputs.tags }}
     runs-on: ubuntu-20.04
     steps:
-      - name: Create release
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 22.x
+      - run: npm install
+      - name: Build VSIX package
+        run: |
+          npm install @vscode/vsce -g
+          npm run compile
+      - name: Build Prerelease VSIX package
+        if: '${{ github.event.inputs.prerelease }}'
+        run: |
+          vsce package -o rde-ros-1-dev.vsix
+      - name: Create Prerelease
+        if: '${{ github.event.inputs.prerelease }}'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           tag: ${{ github.ref_name }}
         run: |
-          gh release create "$tag" \
+          gh release create "${{ github.event.inputs.tags }}" \
               --repo="$GITHUB_REPOSITORY" \
               --title="${tag#v}" \
-              --generate-notes
+              --generate-notes \
+              --prerelease \
+              --files rde-ros-1-dev.vsix
