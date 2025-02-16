@@ -31,11 +31,11 @@ jobs:
           npm install @vscode/vsce -g
           npm run build
       - name: Build Prerelease VSIX package
-        if: '${{ github.event.inputs.prerelease }}'
+        if: ${{ github.event.inputs.prerelease == 'true' }}
         run: |
           vsce package --pre-release -o rde-ros-1-dev.vsix
       - name: Create Prerelease
-        if: '${{ github.event.inputs.prerelease }}'
+        if: ${{ github.event.inputs.prerelease == 'true'}}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           tag: ${{ github.ref_name }}
@@ -47,11 +47,11 @@ jobs:
               --prerelease \
               rde-ros-1-dev.vsix
       - name: Build Release VSIX package
-        if: '!${{ github.event.inputs.prerelease }}'
+        if: ${{ github.event.inputs.prerelease == 'false' }}
         run: |
           vsce package -o rde-ros-1.vsix
       - name: Create Release
-        if: '!${{ github.event.inputs.prerelease }}'
+        if: ${{ github.event.inputs.prerelease == 'false' }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           tag: ${{ github.ref_name }}
