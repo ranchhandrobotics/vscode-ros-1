@@ -42,7 +42,7 @@ jobs:
         run: |
           gh release create "${{ github.event.inputs.tags }}" \
               --repo="$GITHUB_REPOSITORY" \
-              --title="${tag#v}" \
+              --title="Prerelease ${{ github.event.inputs.tags }}" \
               --generate-notes \
               --prerelease \
               rde-ros-1-dev.vsix
