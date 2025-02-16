@@ -1,7 +1,7 @@
 {
     "name": "rde-ros-1",
     "version": "0.9.6",
-    "publisher": "ranchhandrobotics",
+    "publisher": "Ranch-Hand-Robotics",
     "engines": {
         "vscode": "^1.69.0"
     },
