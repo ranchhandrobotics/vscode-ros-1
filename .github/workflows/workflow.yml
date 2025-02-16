@@ -45,14 +45,14 @@ jobs:
           npm install @vscode/vsce -g
           npm run compile
           vsce package -o rde-ros-1-dev.vsix
-      - uses: actions/upload-artifact@v1
+      - uses: actions/upload-artifact@v4
         if: github.event_name == 'push'
         with:
           name: rde-ros-1-dev-vsix
           path: rde-ros-1-dev.vsix
   publish-vsix:
     runs-on: ubuntu-latest
-    if: github.event_name == 'release' && github.event.action == 'published' && github.repository == 'ranchhandrobotics/rde-ros-1'
+    if: github.event_name == 'release' && github.event.action == 'published' && github.repository == 'Ranch-Hand-Robotics/rde-ros-1'
     steps:
       - name: Checkout
         uses: actions/checkout@v2
