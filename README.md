@@ -1,7 +1,8 @@
-# Robot Developer Environment for ROS 1
+# Robot Developer Extensions for ROS 1
 
-The Robot Developer Environment is a set of extensions for [Visual Studio Code][vscode]. This extension provides support for the Legacy [Robot Operating System (ROS)][ros]:tm: 1 runtime, an open source robotics middleware producted by [Open Robotics](https://www.openrobotics.org/) and supports development on Windows and Linux. 
+The Robot Developer Extensions (RDE) is a set of extensions for [Visual Studio Code][vscode]. This extension provides support for the Legacy [Robot Operating System (ROS)][ros] 1 runtime, an open-source robotics middleware producted by [Open Robotics](https://www.openrobotics.org/) and supports development on Windows and Linux. 
 
+> NOTE: This extension is rebranded and re-released by Ranch Hand Robotics, owned by the maintainer of the [MS-IOT VSCode ROS Extension](https://github.com/ms-iot/vscode-ros) with permission from Microsoft. 
 
 ## Features
 
@@ -27,7 +28,7 @@ You can access the following commands from the [Visual Studio Code command palle
 | ROS: Create Catkin Package | Create a catkin package. You can right click on a folder in the explorer to create it in a specific location. |
 | ROS: Create Terminal | Create a terminal with the ROS environment. |
 | ROS: Show Status | Open a detail view showing ROS core runtime status. |
-| ROS: Start | Start ROS1 core. |
+| ROS: Start | Start ROS core. |
 | ROS: Stop  | Terminate ROS core. |
 | ROS: Update C++ Properties | Update the C++ IntelliSense configuration to include ROS and your ROS components. |
 | ROS: Update Python Path | Update the Python IntelliSense configuration to include ROS. |
@@ -136,7 +137,7 @@ Workspace example:
 ```json
 {
     "ros.distro": "foxy",
-    "ros.rosSetupScript": "/opt/ros/foxy/install/setup.bash",
+    "ros.rosSetupScript": "/opt/ros/noetic/install/setup.bash",
     "ros.isolateEnvironment": "false"
 }
 ```
@@ -153,17 +154,16 @@ A big ***Thank you!*** to everyone that have helped make this extension better!
 
 <!-- link to files -->
 <!-- relative links in Visual Studio Marketplace page lead to 404 error, need to use absolute link -->
-[contributing]: https://github.com/ranchhandrobotics/rde-ros-1/blob/master/CONTRIBUTING.md
+[contributing]: https://github.com/ranch-hand-robotics/rde-ros-1/blob/master/CONTRIBUTING.md
 
 <!-- feature documentation -->
-[debug_support-attach]: https://github.com/ranchhandrobotics/rde-ros-1/blob/master/doc/debug-support.md#attach
-[debug_support-launch]: https://github.com/ranchhandrobotics/rde-ros-1/blob/master/doc/debug-support.md#launch
+[debug_support-attach]: https://github.com/ranch-hand-robotics/rde-ros-1/blob/master/doc/debug-support.md#attach
+[debug_support-launch]: https://github.com/ranch-hand-robotics/rde-ros-1/blob/master/doc/debug-support.md#launch
 
 <!-- media -->
-[download_vsix_artifact]: https://raw.githubusercontent.com/ranchhandrobotics/rde-ros-1/master/media/documentation/download-vsix-artifact.png
+[download_vsix_artifact]: https://raw.githubusercontent.com/ranch-hand-robotics/rde-ros-1/master/media/documentation/download-vsix-artifact.png
 
 <!-- link to external sites -->
 [ros]: http://ros.org
 [vscode]: https://code.visualstudio.com
-[vscode-ros-master-build_details]: https://github.com/ranchhandrobotics/rde-ros-1/actions?query=event%3Apush
 
