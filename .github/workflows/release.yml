@@ -45,4 +45,4 @@ jobs:
               --title="${tag#v}" \
               --generate-notes \
               --prerelease \
-              --files rde-ros-1-dev.vsix
+              rde-ros-1-dev.vsix
