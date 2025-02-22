@@ -4,12 +4,14 @@ on:
     paths-ignore:
       - "*.md"
       - "media/documentation/**"
+      - "doc"
     branches:
       - master
   pull_request:
     paths-ignore:
       - "*.md"
       - "media/documentation/**"
+      - "doc"
   release:
     types:
       - published
