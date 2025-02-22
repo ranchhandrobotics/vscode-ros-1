@@ -249,11 +249,11 @@ When this flag is added, `roslaunch` will not start any of the ROS nodes, but in
 * launch commands for each node
 
 <!-- link to files -->
-[architecture]: ../docs/assets/spec/debug-ros-nodes/architecture.png
-[execute_a_debug_configuration]: ../docs/assets/spec/debug-ros-nodes/execute-a-debug-configuration.png
-[debug_flow]: ../docs/assets/spec/debug-ros-nodes/debug-flow.png
-[attach_debug]: ../docs/assets/spec/debug-ros-nodes/attach-debug.png
-[launch_debug]: ../docs/assets/spec/debug-ros-nodes/launch-debug.png
+[architecture]: ../assets/spec/debug-ros-nodes/architecture.png
+[execute_a_debug_configuration]: ../assets/spec/debug-ros-nodes/execute-a-debug-configuration.png
+[debug_flow]: ../assets/spec/debug-ros-nodes/debug-flow.png
+[attach_debug]: ../assets/spec/debug-ros-nodes/attach-debug.png
+[launch_debug]: ../assets/spec/debug-ros-nodes/launch-debug.png
 
 <!-- external links -->
 [ros_wiki_debug]: http://wiki.ros.org/roslaunch/Tutorials/Roslaunch%20Nodes%20in%20Valgrind%20or%20GDB
@@ -261,8 +261,8 @@ When this flag is added, `roslaunch` will not start any of the ROS nodes, but in
 [ms-python.python]: https://marketplace.visualstudio.com/items?itemName=ms-python.python
 [ms-vscode.cpptools]: https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools
 [vscode_python_api]: https://github.com/microsoft/vscode-python/blob/master/src/client/api.ts
-[vscode_python_debug]: https://code.visualstudio.com/docs/python/debugging
-[vscode_cpp_debug]: https://code.visualstudio.com/docs/cpp/launch-json-reference
+[vscode_python_debug]: https://code.visualstudio.com/python/debugging
+[vscode_cpp_debug]: https://code.visualstudio.com/cpp/launch-json-reference
 
 [wikipedia_shebang]: https://en.wikipedia.org/wiki/Shebang_(Unix)
 [pdb]: https://docs.python.org/2/library/pdb.html
