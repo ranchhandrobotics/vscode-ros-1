@@ -1,8 +1,8 @@
 # Robot Developer Extensions for ROS 1
 
-The Robot Developer Extensions (RDE) is a set of extensions for [Visual Studio Code][vscode]. This extension provides support for the Legacy [Robot Operating System (ROS)][ros] 1 runtime, an open-source robotics middleware producted by [Open Robotics](https://www.openrobotics.org/) and supports development on Windows and Linux. 
+The Robot Developer Extensions (RDE) is a set of extensions for [Visual Studio Code](https://code.visualstudio.com). This extension provides support for the Legacy [Robot Operating System (ROS)](http://ros.org) 1 runtime, an open-source robotics middleware producted by [Open Robotics](https://www.openrobotics.org/) and supports development on Windows and Linux. 
 
-> NOTE: This extension is rebranded and re-released by Ranch Hand Robotics, owned by the maintainer of the [MS-IOT VSCode ROS Extension](https://github.com/ms-iot/vscode-ros) with permission from Microsoft. 
+> NOTE: This extension is rebranded and re-released by Ranch Hand Robotics, owned by the maintainer of the [ms-iot VSCode ROS Extension](https://github.com/ms-iot/vscode-ros) with permission from Microsoft. 
 
 ## Features
 
@@ -64,8 +64,4 @@ A big ***Thank you!*** to everyone that have helped make this extension better!
 
 <!-- media -->
 [download_vsix_artifact]: https://raw.githubusercontent.com/ranch-hand-robotics/rde-ros-1/master/docs/assets/download-vsix-artifact.png
-
-<!-- link to external sites -->
-[ros]: http://ros.org
-[vscode]: https://code.visualstudio.com
 
