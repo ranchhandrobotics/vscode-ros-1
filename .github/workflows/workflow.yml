@@ -3,15 +3,15 @@ on:
   push:
     paths-ignore:
       - "*.md"
-      - "docs/assets/**"
-      - "doc"
+      - "mkdocs.yml"
+      - "docs/**"
     branches:
       - master
   pull_request:
     paths-ignore:
       - "*.md"
-      - "docs/assets/**"
-      - "doc"
+      - "mkdocs.yml"
+      - "docs/**"
   release:
     types:
       - published
