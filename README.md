@@ -161,7 +161,7 @@ A big ***Thank you!*** to everyone that have helped make this extension better!
 [debug_support-launch]: https://github.com/ranch-hand-robotics/rde-ros-1/blob/master/docs/debug-support.md#launch
 
 <!-- media -->
-[download_vsix_artifact]: https://raw.githubusercontent.com/ranch-hand-robotics/rde-ros-1/master/media/documentation/download-vsix-artifact.png
+[download_vsix_artifact]: https://raw.githubusercontent.com/ranch-hand-robotics/rde-ros-1/master/docs/assets/download-vsix-artifact.png
 
 <!-- link to external sites -->
 [ros]: http://ros.org

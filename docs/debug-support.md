@@ -139,12 +139,12 @@ The next step would be to switch `preLaunchTask` to use `make_debug_and_core` ta
 3. To use VS Code's C++ extension with MSVC on Windows, please make sure the VS Code instance is launched from a Visual Studio command prompt.
 
 <!-- link to files -->
-[create_attach_debug_configuration]: ../media/documentation/debug-support/create-attach-debug-config.gif
-[attach_to_cpp]: ../media/documentation/debug-support/attach-to-cpp.gif
-[attach_to_python]: ../media/documentation/debug-support/attach-to-python.gif
-[create_launch_debug_configuration]: ../media/documentation/debug-support/create-launch-debug-config.gif
-[check_roscore_status]: ../media/documentation/debug-support/check-roscore-status.gif
-[launch_and_debug_nodes]: ../media/documentation/debug-support/launch-and-debug-nodes.gif
+[create_attach_debug_configuration]: docs/assets/debug-support/create-attach-debug-config.gif
+[attach_to_cpp]: docs/assets/debug-support/attach-to-cpp.gif
+[attach_to_python]: docs/assets/debug-support/attach-to-python.gif
+[create_launch_debug_configuration]: docs/assets/debug-support/create-launch-debug-config.gif
+[check_roscore_status]: docs/assets/debug-support/check-roscore-status.gif
+[launch_and_debug_nodes]: docs/assets/debug-support/launch-and-debug-nodes.gif
 
 [spec_debug_ros_nodes]: ./spec/debug-ros-nodes.md
 

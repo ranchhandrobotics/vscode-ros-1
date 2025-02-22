@@ -3,14 +3,14 @@ on:
   push:
     paths-ignore:
       - "*.md"
-      - "media/documentation/**"
+      - "docs/assets/**"
       - "doc"
     branches:
       - master
   pull_request:
     paths-ignore:
       - "*.md"
-      - "media/documentation/**"
+      - "docs/assets/**"
       - "doc"
   release:
     types:
