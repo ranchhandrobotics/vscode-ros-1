@@ -1,0 +1,14 @@
+site_name: ROS on Windows
+repo_url: https://github.com/ranch-hand-robotics/rde-ros-1
+edit_uri: edit/master/docs/
+nav:
+    - Home: index.md
+
+theme: material
+markdown_extensions:
+  - pymdownx.tabbed
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      use_pygments: true
+use_directory_urls: false
+strict: true
