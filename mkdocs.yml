@@ -9,7 +9,7 @@ nav:
         - configuration.md
     - Debugging:
         - debug-support.md
-        - launchdedebugging.md
+        - launchdebugging.md
     - Specifications:
         - spec/debug-ros-nodes.md
 
