@@ -4,14 +4,14 @@ edit_uri: edit/master/docs/
 nav:
     - Home: index.md
     - Usage:
-        usage.md
-        tutorials.md
-        configuration.md
+        - usage.md
+        - tutorials.md
+        - configuration.md
     - Debugging:
-        debug-support.md
-        launchdedebugging.md
+        - debug-support.md
+        - launchdedebugging.md
     - Specifications:
-        debug-ros-nodes.md
+        - spec/debug-ros-nodes.md
 
 theme: material
 markdown_extensions:
