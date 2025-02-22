@@ -13,7 +13,9 @@ nav:
     - Specifications:
         - spec/debug-ros-nodes.md
 
-theme: material
+theme: 
+    name: material
+    color_mode: auto
 markdown_extensions:
   - pymdownx.tabbed
   - pymdownx.superfences
