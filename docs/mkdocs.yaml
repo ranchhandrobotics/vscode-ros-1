@@ -1,6 +1,6 @@
 site_name: Visual Studio Code Robot Developer Extensions for ROS 1
 repo_url: https://github.com/ranch-hand-robotics/rde-ros-1
-edit_uri: edit/master/doc/
+edit_uri: edit/master/docs/
 nav:
     - Home: index.md
 
