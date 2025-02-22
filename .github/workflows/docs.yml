@@ -17,6 +17,6 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           CUSTOM_DOMAIN: rde-ros-1.ranchhandrobotics.com
-          CONFIG_FILE: docs/mkdocs.yml
+          CONFIG_FILE: doc/mkdocs.yml
           EXTRA_PACKAGES: build-base
           # REQUIREMENTS: docs/requirements.txt
